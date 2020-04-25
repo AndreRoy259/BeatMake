@@ -95,7 +95,7 @@ svg {
   transition: all 0.5s ease;
 }
 
-.play{
+.play {
   padding: 1rem 2rem;
   margin-top: 3rem;
   border: none;
@@ -107,17 +107,43 @@ svg {
   transition: all 0.5s ease;
 }
 
-select{
-    padding: 1rem;
-    font-size: 1rem;
-
+.play.active, .mute.active {
+  background: #999;
 }
 
-@keyframes playTrack{
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.2);
-    }
+.tempo{
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo-slider{
+  padding: 0.25rem;
+  -webkit-appearance: none;
+  margin: 1rem 0;
+  width: 100%;
+  position: relative;
+  background: #777;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: #e8f3ec;
+}
+
+.tempo p{
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
 }
